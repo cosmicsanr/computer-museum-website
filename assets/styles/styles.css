@@ -25,7 +25,7 @@ h4 {
 }
 
 #container {
-  width: 50rem;
+  width: 60rem;
   margin: 0 auto;
 }
 
@@ -68,4 +68,29 @@ h4 {
 
 #mainHeader nav a.selected {
   background-color: #cb1c00;
+}
+
+/* -------- MAIN --------- */
+main p {
+  font-size: 0.8rem;
+}
+#posts {
+  float: left;
+  width: calc(50rem - 300px);
+
+  margin-right: 8rem;
+}
+
+#posts time {
+  font-weight: 700;
+}
+
+#posts address {
+  margin-left: 8rem;
+  display: inline;
+}
+
+/* -------- FOOTER --------- */
+footer {
+  clear: both;
 }
