@@ -1,157 +1,182 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guia Nocturno</title>
-    <link rel="stylesheet" href="./assets/styles/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+  </head>
+  <body>
     <div id="container">
-        <header id="mainHeader">
-            <div>
-                <h1>
-                    história da informática
-                </h1>
-                <p>
-                    desenhado por TMthree
-                </p>
+      <header id="mainHeader">
+        <div>
+          <h1>história da informática</h1>
+          <p>desenhado por TMthree</p>
+        </div>
+        <nav>
+          <a href="" class="selected">Tópicos</a>
+          <a href="">Blog</a>
+          <a href="">Fotos</a>
+          <a href="">Sobre</a>
+        </nav>
+      </header>
+      <main>
+        <section id="posts">
+          <article>
+            <header>
+              <h2>hackdom visto por eric s. raymond</h2>
+              <time datetime="2017-08-14">Agosto 14, 2017</time>
+              <address>Posted by <a href="#">Alberto</a></address>
+            </header>
+            <div class="post-content">
+              <p>
+                Neste ensaio Eric S. Raymond, o ambiente o surgimento da cultura
+                Hacker. O ambiente "retro chic" do
+                <span class="highlight"> Justamente</span>, acompanhado porsons
+                de Jazz e Blues, proporciona uma atmosfera agradável e
+                intimista.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum rerum vel iusto quae praesentium dolor illum,
+                nesciunt, deserunt natus eius dicta commodi. Dolor, rem harum!
+              </p>
             </div>
-            <nav>
-                <a href="">Tópicos</a>
-                <a href="">Blog</a>
-                <a href="">Fotos</a>
-                <a href="">Sobre</a>
-            </nav>
-        </header>
-        <main>
-            <section id="posts">
-                <article>
-                    <header>
-                        <h2>
-                            hackdom visto por eric s. raymond
-                        </h2>
-                        <time datetime="2017-08-14">Agosto 14, 2017</time>
-                        <address>Posted by <a href="#">Alberto</a></address>
-                    </header>
-                    <div class="post-content">
-                        <p>
-                            Neste ensaio Eric S. Raymond, o ambiente o surgimento da cultura Hacker. O ambiente "retro chic" do <span class="highlight">
-                                Justamente</span>, acompanhado porsons de Jazz e Blues, proporciona uma atmosfera agradável e intimista.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum rerum vel iusto quae praesentium dolor illum, nesciunt, deserunt natus eius dicta commodi. Dolor, rem harum!
-                
-                        </p>
-                    </div>
-                    <div class="post-footer">
-                        <a href="#" class="post-link">Mais</a>
-                        <a href="#" class="post-link">Comentários</a>
-                    </div>
-                </article>
-                <article>
-                    <header>
-                        <h2>
-                            o nascimento do computador pessoal
-                        </h2>
-                        <time datetime="2017-08-14">Agosto 12, 2017</time>
-                        <address>Posted by <a href="#">Alberto</a></address>
-                    </header>
-                    <div class="post-content">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, accusamus impedit modi iusto dolore reiciendis qui ea earum, vitae, molestias a aperiam. <span class="highlight">Voluptatem at eaque</span> laudantium placeat earum ipsum obcaecati, ipsa qui animi sed exercitationem expedita neque? Expedita, ab. 
-                        </p>
-                    </div>
-                    <div class="post-footer">
-                        <a href="#" class="post-link">Mais</a>
-                        <a href="#" class="post-link">Comentários</a>
-                    </div>
-                </article>
-                <article>
-                    <header>
-                        <h2>
-                            a world wide web
-                        </h2>
-                        <time datetime="2017-08-14">Agosto 09, 2017</time>
-                        <address>Posted by <a href="#">Alberto</a></address>
-                    </header>
-                    <div class="post-content">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nulla, aliquam qui neque ipsum similique enim veritatis nisi cum, illum nam accusantium temporibus quibusdam ullam ea dignissimos accusamus! Eum consequuntur beatae iusto maxime nulla consequatur animi vitae officia obcaecati <span class="highlight">ipsum sit sint</span>, libero nam quos illum fuga! Qui recusandae obcaecati voluptates praesentium illum alias sed asperiores architecto ab nulla eligendi dicta maiores distinctio commodi doloremque repudiandae odit fuga reiciendis quam, at error. Quidem tenetur placeat est et aperiam commodi id accusamus expedita, earum odit doloremque eaque vitae rem eum sapiente quos ex dolorem nobis obcaecati! Inventore nesciunt dolore optio rem!
-                        </p>
-                    </div>
-                    <div class="post-footer">
-                        <a href="#" class="post-link">Mais</a>
-                        <a href="#" class="post-link">Comentários</a>
-                    </div>
-                </article>
-            </section>
-            <aside>
-                <div id="inputControl">
-                    <input type="text">
-                    <button>GO</button>
-                </div>
-                <div id="phrases">
-                    <h4>Frases</h4>
-                    <p>Há 10 tipos de pessoas no mundo: as que sabem binário e as que não sabem...</p>    
-                </div>
-                <div id="sites">
-                    <h4>Sítios</h4>
-                    <ul>
-                        <li><a href="#">Unix</a></li>
-                        <li><a href="#">Web Archive</a></li>
-                        <li><a href="#">Internet</a></li>
-                        <li><a href="#">Programação</a></li>
-                        <li><a href="#">Computadores</a></li>
-                        <li><a href="#">Inteligência Artificial</a></li>
-                    </ul>
-                </div>
-                <div id="events">
-                    <h4>Acontecimentos</h4>
-                    <ul>
-                        <li><a href="#">Músicais</a></li>
-                        <li><a href="#">Culturais</a></li>
-                        <li><a href="#">Espectáculos</a></li>
-                        <li><a href="#">Festas</a></li>
-                        <li><a href="#">Inaugurações</a></li>
-                        <li><a href="#">Moda</a></li>
-                    </ul>
-                </div>
-                <div id="files">
-                    <h4>Arquivos</h4>
-                    <ul>
-                        <li>Lorem ipsum dolor</li>
-                        <li>sit amet consectetur</li>
-                        <li>adipisicing elit</li>
-                        <li>Dicta accusantium</li>
-                        <li>exercitationem delectus</li>
-                        <li>amet autem quae</li>
-                    </ul>
-                </div>
-            </aside>
-        </main>
-        <footer>
-            <section>
-                <h3>bem vindos</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur consectetur aliquid dicta autem. Laudantium assumenda laborum neque accusamus dolores alias?</p>    
-            </section>
-            <section>
-                <h3>agradecimentos</h3>
-                <p>Pariatur, neque, voluptate hic error labore veritatis itaque maxime consequatur, aut autem quam natus? Cum maiores aperiam nisi aut assumenda asperiores ex repudiandae sed voluptatum?</p>
-            </section>
-            <section>
-                <h3>ligações recomendadas</h3>
-                <ul>
-                    <li><a href="#">Lorem ipsum consectetur</a></li>
-                    <li><a href="#">dolor sit amet</a></li>
-                    <li><a href="#">adipisicing elit</a></li>
-                    <li><a href="#">Doloribus aspernatur</a></li>
-                    <li><a href="#"> nemo unde autem</a></li>
-                </ul>
-            </section>
-        </footer>
-        <small>COPYRIGHT © 2023 NICOLASONIA.COM. ALL RIGHTS RESERVED.DESENHADO POR NICOLAS E SONIA.</small>
-    </div>    
-</body>
+            <div class="post-footer">
+              <a href="#" class="post-link">Mais</a>
+              <a href="#" class="post-link">Comentários</a>
+            </div>
+          </article>
+          <article>
+            <header>
+              <h2>o nascimento do computador pessoal</h2>
+              <time datetime="2017-08-14">Agosto 12, 2017</time>
+              <address>Posted by <a href="#">Alberto</a></address>
+            </header>
+            <div class="post-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla,
+                accusamus impedit modi iusto dolore reiciendis qui ea earum,
+                vitae, molestias a aperiam.
+                <span class="highlight">Voluptatem at eaque</span> laudantium
+                placeat earum ipsum obcaecati, ipsa qui animi sed exercitationem
+                expedita neque? Expedita, ab.
+              </p>
+            </div>
+            <div class="post-footer">
+              <a href="#" class="post-link">Mais</a>
+              <a href="#" class="post-link">Comentários</a>
+            </div>
+          </article>
+          <article>
+            <header>
+              <h2>a world wide web</h2>
+              <time datetime="2017-08-14">Agosto 09, 2017</time>
+              <address>Posted by <a href="#">Alberto</a></address>
+            </header>
+            <div class="post-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                nulla, aliquam qui neque ipsum similique enim veritatis nisi
+                cum, illum nam accusantium temporibus quibusdam ullam ea
+                dignissimos accusamus! Eum consequuntur beatae iusto maxime
+                nulla consequatur animi vitae officia obcaecati
+                <span class="highlight">ipsum sit sint</span>, libero nam quos
+                illum fuga! Qui recusandae obcaecati voluptates praesentium
+                illum alias sed asperiores architecto ab nulla eligendi dicta
+                maiores distinctio commodi doloremque repudiandae odit fuga
+                reiciendis quam, at error. Quidem tenetur placeat est et aperiam
+                commodi id accusamus expedita, earum odit doloremque eaque vitae
+                rem eum sapiente quos ex dolorem nobis obcaecati! Inventore
+                nesciunt dolore optio rem!
+              </p>
+            </div>
+            <div class="post-footer">
+              <a href="#" class="post-link">Mais</a>
+              <a href="#" class="post-link">Comentários</a>
+            </div>
+          </article>
+        </section>
+        <aside>
+          <div id="inputControl">
+            <input type="text" />
+            <button>GO</button>
+          </div>
+          <div id="phrases">
+            <h4>Frases</h4>
+            <p>
+              Há 10 tipos de pessoas no mundo: as que sabem binário e as que não
+              sabem...
+            </p>
+          </div>
+          <div id="sites">
+            <h4>Sítios</h4>
+            <ul>
+              <li><a href="#">Unix</a></li>
+              <li><a href="#">Web Archive</a></li>
+              <li><a href="#">Internet</a></li>
+              <li><a href="#">Programação</a></li>
+              <li><a href="#">Computadores</a></li>
+              <li><a href="#">Inteligência Artificial</a></li>
+            </ul>
+          </div>
+          <div id="events">
+            <h4>Acontecimentos</h4>
+            <ul>
+              <li><a href="#">Músicais</a></li>
+              <li><a href="#">Culturais</a></li>
+              <li><a href="#">Espectáculos</a></li>
+              <li><a href="#">Festas</a></li>
+              <li><a href="#">Inaugurações</a></li>
+              <li><a href="#">Moda</a></li>
+            </ul>
+          </div>
+          <div id="files">
+            <h4>Arquivos</h4>
+            <ul>
+              <li>Lorem ipsum dolor</li>
+              <li>sit amet consectetur</li>
+              <li>adipisicing elit</li>
+              <li>Dicta accusantium</li>
+              <li>exercitationem delectus</li>
+              <li>amet autem quae</li>
+            </ul>
+          </div>
+        </aside>
+      </main>
+      <footer>
+        <section>
+          <h3>bem vindos</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Consequuntur consectetur aliquid dicta autem. Laudantium assumenda
+            laborum neque accusamus dolores alias?
+          </p>
+        </section>
+        <section>
+          <h3>agradecimentos</h3>
+          <p>
+            Pariatur, neque, voluptate hic error labore veritatis itaque maxime
+            consequatur, aut autem quam natus? Cum maiores aperiam nisi aut
+            assumenda asperiores ex repudiandae sed voluptatum?
+          </p>
+        </section>
+        <section>
+          <h3>ligações recomendadas</h3>
+          <ul>
+            <li><a href="#">Lorem ipsum consectetur</a></li>
+            <li><a href="#">dolor sit amet</a></li>
+            <li><a href="#">adipisicing elit</a></li>
+            <li><a href="#">Doloribus aspernatur</a></li>
+            <li><a href="#"> nemo unde autem</a></li>
+          </ul>
+        </section>
+      </footer>
+      <small
+        >COPYRIGHT © 2023 NICOLASONIA.COM. ALL RIGHTS RESERVED.DESENHADO POR
+        NICOLAS E SONIA.</small
+      >
+    </div>
+  </body>
 </html>

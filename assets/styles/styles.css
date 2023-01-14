@@ -1,62 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    color: #757575;
-    background-image: url("../images/half_moon.png");
-    background-repeat: no-repeat;
-    background-color: #212121;   
+  color: #757575;
+  background-image: url("../images/half_moon.png");
+  background-repeat: no-repeat;
+  background-color: #212121;
 }
 
 body * {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    color: #b04f35;
+  color: #b04f35;
 }
 
 #container {
-    width: 43.75rem;
-    margin: 0 auto;        
+  width: 50rem;
+  margin: 0 auto;
 }
 
 /* -------- HEADER --------- */
 #mainHeader {
-    margin-block: 3rem;
+  margin-bottom: 3rem;
 }
 
 #mainHeader div {
-    display: inline-block;
-    width: 12.5rem;
+  display: inline-block;
+  width: 12.5rem;
+  padding-top: 3rem;
 }
 
 #mainHeader p {
-    font-style: italic;
+  font-style: italic;
 }
 
 #mainHeader nav {
-    float: right;
-    margin-top: 2rem;
+  float: right;
+  height: 100%;
 }
 
 #mainHeader nav a {
-    color: white;
-    background-color: #cb1c00;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 0.8rem;
-    text-decoration: none;
-    padding: 0 1rem;  
+  display: inline-block;
+
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  font-weight: 700;
+  font-size: 0.8rem;
+
+  padding: 6rem 1.2rem 1rem 1.2rem;
 }
 
+#mainHeader nav a:hover {
+  background-color: #cb1c00;
+}
 
-
+#mainHeader nav a.selected {
+  background-color: #cb1c00;
+}
