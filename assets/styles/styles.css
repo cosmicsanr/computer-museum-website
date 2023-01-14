@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #757575;
+    background-image: url("../images/half_moon.png");
+    background-repeat: no-repeat;
+    background-color: #212121;   
+}
+
+body * {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #b04f35;
+}
+
+#container {
+    width: 43.75rem;
+    margin: 0 auto;        
+}
+
+/* -------- HEADER --------- */
+#mainHeader {
+    margin-block: 3rem;
+}
+
+#mainHeader div {
+    display: inline-block;
+    width: 12.5rem;
+}
+
+#mainHeader p {
+    font-style: italic;
+}
+
+#mainHeader nav {
+    float: right;
+    margin-top: 2rem;
+}
+
+#mainHeader nav a {
+    color: white;
+    background-color: #cb1c00;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-decoration: none;
+    padding: 0 1rem;  
+}
+
+
+
