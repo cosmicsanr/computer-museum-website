@@ -15,6 +15,7 @@ body {
 
 body * {
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 
 h1,
@@ -85,7 +86,7 @@ main p .highlight {
 #posts {
   float: left;
   width: calc(50rem - 135px);
-  margin-right: 3rem;
+  margin-right: 2.8rem;
 }
 
 #posts .post {
@@ -127,7 +128,56 @@ main p .highlight {
   margin-inline: 3rem;
 }
 
+/* -------- ASIDE --------- */
+
+aside {
+  float: left;
+  width: 26%;
+}
+
+aside input {
+  width: 12rem;  
+}
+
+aside button {
+  width: 3rem;  
+}
+
+aside > div {
+  margin-bottom: 1.5rem;
+}
+
+aside > div:not(:first-child) {
+  padding-left: 1rem;
+}
+
+aside > div h4 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+aside > div ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+aside > div ul li {
+  font-size: .9rem;
+  margin-block: 1rem;
+}
+
+aside > div ul li a {
+  font-weight: 500;
+  color: #757575;
+}
+
+aside > div ul li a:hover {
+  color:#b04f35;
+  text-decoration: underline;
+}
+
 /* -------- FOOTER --------- */
 footer {
   clear: both;
 }
+
