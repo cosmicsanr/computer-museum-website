@@ -129,18 +129,19 @@ main p .highlight {
 }
 
 /* -------- ASIDE --------- */
-
 aside {
   float: left;
   width: 26%;
+  margin-bottom: 4rem;
 }
 
 aside input {
-  width: 12rem;  
+  width: 12rem;
 }
 
 aside button {
-  width: 3rem;  
+  width: 3rem;
+  cursor: pointer;
 }
 
 aside > div {
@@ -162,7 +163,7 @@ aside > div ul {
 }
 
 aside > div ul li {
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin-block: 1rem;
 }
 
@@ -172,12 +173,49 @@ aside > div ul li a {
 }
 
 aside > div ul li a:hover {
-  color:#b04f35;
+  color: #b04f35;
   text-decoration: underline;
 }
 
 /* -------- FOOTER --------- */
 footer {
+  background-color: #2c2c2c;
   clear: both;
+  margin-bottom: 1rem;
 }
 
+footer .wrapper {
+  padding: 2.5rem 0 3rem 0;
+  text-align: center;
+}
+
+footer section {
+  display: inline-block;
+
+  width: 20rem;
+  margin-inline: 2rem;
+  text-align: justify;
+}
+
+footer section h3 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+footer section ul {
+  padding-left: 1rem;
+}
+
+footer section ul li a {
+  text-decoration: none;
+  color: #b04f35;
+}
+
+small {
+  display: block;
+  text-align: center;
+
+  margin-bottom: 1rem;
+}
