@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 * {
   margin: 0;
@@ -25,7 +25,7 @@ h4 {
 }
 
 #container {
-  width: 50rem;
+  width: 60rem;
   margin: 0 auto;
 }
 
@@ -68,4 +68,66 @@ h4 {
 
 #mainHeader nav a.selected {
   background-color: #cb1c00;
+}
+
+/* -------- MAIN --------- */
+main p {
+  font-size: 0.8rem;
+  margin-block: 1rem;
+  line-height: 1.3rem;
+  text-align: justify;
+}
+
+main p .highlight {
+  color: #b04f35;
+}
+
+#posts {
+  float: left;
+  width: calc(50rem - 135px);
+  margin-right: 3rem;
+}
+
+#posts .post {
+  margin-bottom: 5rem;
+}
+
+#posts h2 {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+#posts time {
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+#posts address {
+  font-weight: 700;
+  font-style: normal;
+
+  float: right;
+  display: inline;
+  font-size: 0.8rem;
+}
+
+#posts address a {
+  color: #b04f35;
+  text-decoration: none;
+}
+
+#posts .post-footer a {
+  color: #cbc9c9;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+#posts .post-footer a:first-child {
+  margin-inline: 3rem;
+}
+
+/* -------- FOOTER --------- */
+footer {
+  clear: both;
 }
