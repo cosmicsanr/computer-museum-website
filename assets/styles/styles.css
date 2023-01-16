@@ -1,5 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
+:root {
+  --grey-color-100: #cbc9c9;
+  --grey-color-400: #757575;
+  --grey-color-700: #2c2c2c;
+  --grey-color-900: #212121;
+
+  --reddish-orange-400: #b04f35;
+  --reddish-orange-700: #cb1c00;
+
+  --size-100: 0.8rem;
+  --size-300: 0.9rem;
+  --size-400: 1.3rem;
+  --size-700: 1.4rem;
+  --size-900: 1.7rem;
+}
+
+/* ----- GENERAL ----- */
 * {
   margin: 0;
   padding: 0;
@@ -7,10 +24,10 @@
 }
 
 body {
-  color: #757575;
+  color: var(--grey-color-400);
   background-image: url("../images/half_moon.png");
   background-repeat: no-repeat;
-  background-color: #212121;
+  background-color: var(--grey-color-900);
 }
 
 body * {
@@ -22,7 +39,21 @@ h1,
 h2,
 h3,
 h4 {
-  color: #b04f35;
+  color: var(--reddish-orange-400);
+}
+
+main p {
+  font-size: var(--size-100);
+  margin-block: 1rem;
+  line-height: var(--size-400);
+  text-align: justify;
+}
+
+small {
+  display: block;
+  text-align: center;
+
+  margin-bottom: 1rem;
 }
 
 #container {
@@ -53,40 +84,29 @@ h4 {
 #mainHeader nav a {
   display: inline-block;
 
-  color: white;
+  color: #fff;
   text-transform: uppercase;
   text-decoration: none;
 
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: var(--size-100);
 
   padding: 6rem 1.2rem 1rem 1.2rem;
 }
 
 #mainHeader nav a:hover {
-  background-color: #cb1c00;
+  background-color: var(--reddish-orange-700);
 }
 
 #mainHeader nav a.selected {
-  background-color: #cb1c00;
+  background-color: var(--reddish-orange-700);
 }
 
-/* -------- MAIN --------- */
-main p {
-  font-size: 0.8rem;
-  margin-block: 1rem;
-  line-height: 1.3rem;
-  text-align: justify;
-}
-
-main p .highlight {
-  color: #b04f35;
-}
-
+/* -------- MAIN (SECTION) --------- */
 #posts {
   float: left;
   width: calc(50rem - 135px);
-  margin-right: 2.8rem;
+  margin-right: var(--size-100);
 }
 
 #posts .post {
@@ -94,102 +114,103 @@ main p .highlight {
 }
 
 #posts h2 {
-  font-size: 1.7rem;
+  font-size: var(--size-900);
   font-weight: 500;
 }
 
 #posts time {
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: var(--size-100);
 }
 
 #posts address {
   font-weight: 700;
   font-style: normal;
+  font-size: var(--size-100);
 
   float: right;
   display: inline;
-  font-size: 0.8rem;
 }
 
 #posts address a {
-  color: #b04f35;
+  color: var(--reddish-orange-400);
   text-decoration: none;
 }
 
+#posts .post-content .highlight {
+  color: var(--reddish-orange-400);
+}
+
 #posts .post-footer a {
-  color: #cbc9c9;
+  color: var(--grey-color-100);
   text-decoration: none;
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: var(--size-100);
 }
 
 #posts .post-footer a:first-child {
   margin-inline: 3rem;
 }
 
-/* -------- ASIDE --------- */
-aside {
+/* -------- MAIN (ASIDE) --------- */
+#topics {
   float: left;
   width: 26%;
   margin-bottom: 4rem;
 }
 
-aside input {
+#topics input {
   width: 12rem;
 }
 
-aside button {
+#topics button {
   width: 3rem;
   cursor: pointer;
 }
 
-aside > div {
+#topics > div {
   margin-bottom: 1.5rem;
 }
 
-aside > div:not(:first-child) {
+#topics > div:not(:first-child) {
   padding-left: 1rem;
 }
 
-aside > div h4 {
-  font-size: 1.3rem;
+#topics > div h4 {
+  font-size: var(--size-400);
   font-weight: 500;
 }
 
-aside > div ul {
+#topics > div ul {
   list-style: none;
   padding-left: 1rem;
 }
 
-aside > div ul li {
-  font-size: 0.9rem;
+#topics > div ul li {
+  font-size: var(--size-300);
   margin-block: 1rem;
 }
 
-aside > div ul li a {
+#topics > div ul li a {
   font-weight: 500;
-  color: #757575;
+  color: var(--grey-color-400);
 }
 
-aside > div ul li a:hover {
-  color: #b04f35;
+#topics > div ul li a:hover {
+  color: var(--reddish-orange-400);
   text-decoration: underline;
 }
 
 /* -------- FOOTER --------- */
-footer {
-  background-color: #2c2c2c;
+#pageFooter {
+  text-align: center;
+  background-color: var(--grey-color-700);
   clear: both;
   margin-bottom: 1rem;
-}
-
-footer .wrapper {
   padding: 2.5rem 0 3rem 0;
-  text-align: center;
 }
 
-footer section {
+#pageFooter section {
   display: inline-block;
 
   width: 20rem;
@@ -197,25 +218,18 @@ footer section {
   text-align: justify;
 }
 
-footer section h3 {
+#pageFooter section h3 {
   color: #fff;
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: var(--size-700);
   margin-bottom: 1rem;
 }
 
-footer section ul {
+#pageFooter section ul {
   padding-left: 1rem;
 }
 
-footer section ul li a {
+#pageFooter section ul li a {
   text-decoration: none;
-  color: #b04f35;
-}
-
-small {
-  display: block;
-  text-align: center;
-
-  margin-bottom: 1rem;
+  color: var(--reddish-orange-400);
 }
