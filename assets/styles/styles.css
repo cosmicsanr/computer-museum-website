@@ -89,7 +89,7 @@ small {
 
   width: 100%;
   height: 100%;
-  background-color: rgb(29, 26, 27);
+  background-color: var(--grey-color-900);
 }
 
 #side-drawer nav {
